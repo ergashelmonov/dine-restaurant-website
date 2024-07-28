@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/images/svg/logo.svg" />
+    <link rel="stylesheet" href="../src/css/boooking.css" />
+    <title>dine Reservations</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-container container">
+          <div class="dine-about_info">
+            <img src="../src/images/svg/logo.svg" alt="logo" />
+            <h1 class="title">Reservations</h1>
+            <p class="discription">
+              We can’t wait to host you. If you have any special requirements
+              please feel free to call on the phone number below. We’ll be happy
+              to accommodate you.
+            </p>
+          </div>
+          <form>
+            <div class="input-box">
+              <input name="Name" type="text" placeholder="Name" />
+              <span class="error">This field is required</span>
+            </div>
+            <div class="input-box">
+              <input name="Email" type="email" placeholder="Email" required />
+              <span class="error">This field is required</span>
+            </div>
+            <div class="reservations-day">
+              <div class="input-box">
+                <label for="month" id="month">Pick a date</label>
+                <span class="error">This field is incomplete</span>
+              </div>
+              <div class="date">
+                <input
+                  name="month"
+                  type="number"
+                  placeholder="MM"
+                  min="1"
+                  max="12"
+                />
+                <input
+                  name="day"
+                  type="number"
+                  placeholder="DD"
+                  min="1"
+                  max="31"
+                />
+                <input
+                  name="year"
+                  type="number"
+                  placeholder="YYYY"
+                  min="2024"
+                />
+              </div>
+            </div>
+            <div class="reservations-time">
+              <div class="input-box">
+                <label for="time" id="time">Pick a time</label>
+                <span class="error">This field is incomplete</span>
+              </div>
+              <div class="time">
+                <input name="hour" type="number" placeholder="09" />
+                <input
+                  name="menute"
+                  type="number"
+                  placeholder="00"
+                  min="0"
+                  maxlength="2"
+                />
+                <div class="select" name="time">
+                  <div class="value">AM</div>
+                  <div class="options">
+                    <p class="option value-active">AM</p>
+                    <p class="option">PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="person-count">
+              <svg
+                class="minus"
+                width="7"
+                height="3"
+                viewBox="0 0 7 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.42491 2.97695V0.600952H0.628906V2.97695H6.42491Z"
+                  fill="#9E7F66"
+                />
+              </svg>
+              <p><span class="count-person">4</span> people</p>
+
+              <svg
+                class="plus"
+                width="10"
+                height="11"
+                viewBox="0 0 10 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.22709 10.156V6.72696H9.65609V4.34196H6.22709V0.912964H3.84209V4.34196H0.413086V6.72696H3.84209V10.156H6.22709Z"
+                  fill="#9E7F66"
+                />
+              </svg>
+            </div>
+            <button class="btn">MAKE RESERVATION
+            </button>
+          </form>
+        </div>
+      </header>
+      <footer class="footer">
+        <div class="footer-container container">
+          <img src="../src/images/svg/logo.svg" alt="logo" />
+          <p class="footer-list">
+            Marthwaite, Sedbergh<br />
+            Cumbria<br />
+            +00 44 123 4567
+          </p>
+          <p class="footer-list">
+            OPEN TIMES<br />
+            MON - FRI: 09:00 AM - 10:00 PM<br />
+            SAT - SUN: 09:00 AM - 11:30 PM
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="../src/js/booking.js"></script>
+  </body>
+</html>
